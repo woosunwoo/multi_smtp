@@ -19,7 +19,12 @@ Gem::Specification.new do |spec|
     "changelog_uri" => File.join(spec.homepage, "releases")
   }
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = Dir[
+    "lib/**/*",
+    "README.md",
+    "LICENSE.txt",
+    "multi_smtp.gemspec"
+  ]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
