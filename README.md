@@ -1,4 +1,4 @@
-# MultiSMTP
+# MultiSMTPPlus
 
 Email delivery is a critical component of many web applications. Occasionally
 third-party services can experience temporary downtime. We can achieve automatic failover by overriding the default email delivery method with MultiSMTP.
