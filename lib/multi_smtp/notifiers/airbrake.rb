@@ -1,8 +1,8 @@
 module MultiSMTP
   module Notifiers
     module Airbrake
-      def self.notify(e, mail)
-        Airbrake.notify(e,
+      def self.notify(exception, mail)
+        ::Airbrake.notify(exception,
           error_message: "Email delivery failed with all SMTP providers.",
           parameters: { mail: extract_mail_params(mail) }
         )
