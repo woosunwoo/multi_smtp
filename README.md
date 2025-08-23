@@ -1,5 +1,9 @@
 # MultiSMTPPlus
 
+<p align="center">
+  <img src="multi-smtp-pro-logo.png" alt="MultiSMTP Pro" width="420" />
+</p>
+
 Email delivery is a critical component of many web applications. Occasionally
 third-party services can experience temporary downtime. We can achieve automatic failover by overriding the default email delivery method with MultiSMTP.
 
